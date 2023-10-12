@@ -1,1 +1,75 @@
 
+/* style.css */
+
+/* Add a responsive design for navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* Make the logo and navigation links responsive */
+nav img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Adjust font size and padding for navigation links */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  font-size: 1rem;
+  margin-right: 20px;
+}
+
+/* Style the search input for mobile devices */
+.search {
+  display: none; /* Hide the search input initially */
+}
+
+/* Use media queries to control the display of the search input on mobile */
+@media (max-width: 768px) {
+  .search {
+    display: block; /* Show the search input on smaller screens */
+  }
+
+  nav ul {
+    display: none; /* Hide the navigation links on smaller screens */
+  }
+}
+
+/* Add responsive design for the landing section */
+.landing {
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Use media queries to adjust the font size and button size on mobile */
+@media (max-width: 768px) {
+  .landing h3 {
+    font-size: 1.5rem;
+  }
+
+  .landing button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+
+/* Add responsive design for the about section */
+.about {
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Use media queries to adjust font size and line height for paragraphs on mobile */
+@media (max-width: 768px) {
+  .about p {
+    font-size: 0.9rem;
+    line-height: 1.3;
+  }
+}
+
+/* Add similar responsive design for other sections as needed */
